@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-color: #3d3737;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+.screen {
+  cursor: pointer;
+  width: 60%;
+  background-color: #000 !important;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.controls {
+  background-color: #000;
+  color: #fff;
+  width: 60%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: #556470;
+}
+
+.controls .fa-stop {
+  color: #ff6347;
+}
+
+.controls .fa-pause {
+  color: #556470;
+}
+
+.controls .timestamp {
+  color: #fff;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}
